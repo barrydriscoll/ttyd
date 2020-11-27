@@ -37,4 +37,4 @@ ENV LOGIN_PASSWORD admin
 
 ENTRYPOINT ["/sbin/tini", "--"]
 #CMD ["ttyd", "bash"]
-CMD ttyd --port 8080 --credential $LOGIN_USER:$LOGIN_PASSWORD bash
+CMD ttyd --port 8181 --credential $LOGIN_USER:$LOGIN_PASSWORD bash
